@@ -11,7 +11,7 @@ import {
   LinkStyled,
 } from './GetMoviesDetails.styled';
 
-export const GetMoviesDetails = () => {
+const GetMoviesDetails = () => {
   const { movieId } = useParams();
   const location = useLocation();
   const [option, setOption] = useState({});
@@ -91,3 +91,5 @@ export const GetMoviesDetails = () => {
     </>
   );
 };
+
+export default GetMoviesDetails;

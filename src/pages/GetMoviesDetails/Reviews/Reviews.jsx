@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 import { fetchFilmByReviews } from '../../../components/services/fetchFilmApi';
 
-export const Reviews = () => {
+const Reviews = () => {
   const { movieId } = useParams();
   const [option, setOption] = useState([]);
 
@@ -36,3 +36,5 @@ export const Reviews = () => {
     </>
   );
 };
+
+export default Reviews;

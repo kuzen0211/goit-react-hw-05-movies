@@ -8,7 +8,7 @@ import { MOVIE } from 'components/const/const';
 import { SearchBar } from '../../components/SearchBar/SearchBar';
 import { ListMovie } from '../../components/ListMovie/ListMovie';
 
-export const Movies = () => {
+const Movies = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const searchQuery = searchParams.get('query') ?? '';
   const [movies, setMovies] = useState([]);
@@ -38,3 +38,5 @@ export const Movies = () => {
     </>
   );
 };
+
+export default Movies;

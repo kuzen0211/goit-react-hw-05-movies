@@ -1,7 +1,7 @@
 import { AppBar } from '../AppBar/AppBar';
 import { Outlet } from 'react-router-dom';
 
-export const Layout = () => {
+const Layout = () => {
   return (
     <nav>
       <AppBar />
@@ -9,3 +9,5 @@ export const Layout = () => {
     </nav>
   );
 };
+
+export default Layout;

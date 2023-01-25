@@ -3,7 +3,7 @@ import { fetchFilmApi } from '../../components/services/fetchFilmApi';
 import { ListMovie } from '../../components/ListMovie/ListMovie';
 import { MOVIE } from '../../components/const/const';
 
-export const Home = () => {
+const Home = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -14,3 +14,5 @@ export const Home = () => {
 
   return <ListMovie movies={movies} path={'movies'} />;
 };
+
+export default Home;

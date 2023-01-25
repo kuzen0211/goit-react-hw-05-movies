@@ -5,7 +5,7 @@ import { fetchFilmByCast } from '../../../components/services/fetchFilmApi';
 import { IMG } from '../../../components/const/const';
 import noImage from '../../../components/const/noImage.jpg';
 
-export const Cast = () => {
+const Cast = () => {
   const { movieId } = useParams();
   const [option, setOption] = useState([]);
 
@@ -42,3 +42,5 @@ export const Cast = () => {
     </>
   );
 };
+
+export default Cast;
